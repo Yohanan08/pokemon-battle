@@ -44,3 +44,7 @@ const pokemon1 = { name: "", hp: 100, attack: 10, img: "" };
 
         fetchPokemon(Math.floor(Math.random() * 150) + 1, pokemon1);
         fetchPokemon(Math.floor(Math.random() * 150) + 1, pokemon2);
+
+        document.getElementById("restartGame").addEventListener("click", function() {
+            window.location.reload(); // Recarga la página
+          });

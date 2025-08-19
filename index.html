@@ -9,20 +9,21 @@
 <body>
     <h1>Combate Pokémon</h1>
     <div class="battlefield">
-        <div class="pokemon" id="pokemon1">
-            <h2 id="name1">Pokémon 1</h2>
-            <img id="img1" src="" alt="Pokémon 1">
-            <p>Vida: <span id="hp1">100</span></p>
-            <button onclick="attack(2)">Atacar</button>
-        </div>
-        <div class="pokemon" id="pokemon2">
-            <h2 id="name2">Pokémon 2</h2>
-            <img id="img2" src="" alt="Pokémon 2">
-            <p>Vida: <span id="hp2">100</span></p>
-            <button onclick="attack(1)">Atacar</button>
-        </div>
-        <button id="restartGame">Reiniciar Juego</button>
+    <div class="pokemon" id="pokemon1">
+        <h2 id="name1">Pokémon 1</h2>
+        <img id="img1" src="" alt="Pokémon 1">
+        <p>Vida: <span id="hp1">100</span></p>
+        <button id="attack2" onclick="attack(2)">Atacar</button>
     </div>
+    <div class="pokemon" id="pokemon2">
+        <h2 id="name2">Pokémon 2</h2>
+        <img id="img2" src="" alt="Pokémon 2">
+        <p>Vida: <span id="hp2">100</span></p>
+        <button id="attack1" onclick="attack(1)">Atacar</button>
+    </div>
+    <div id="winner"></div>
+    <button id="restartGame">Reiniciar Juego</button>
+</div>
 
     <script src="./index.js"></script>
 </body>

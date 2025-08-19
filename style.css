@@ -80,6 +80,29 @@ img {
     background: #e84118;
 }
 
+.pokemon.hit {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+.pokemon.evolve {
+    animation: evolve-glow 1s;
+    box-shadow: 0 0 30px 10px #ffe066;
+}
+
+@keyframes evolve-glow {
+    0% { box-shadow: 0 0 0 0 #ffe066; }
+    50% { box-shadow: 0 0 40px 20px #ffe066; }
+    100% { box-shadow: 0 0 0 0 #ffe066; }
+}
+
 /* Diseño responsivo para pantallas más grandes */
 @media (min-width: 600px) {
     .battlefield {
